@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cart system</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- fontAwesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+</head>
+
+<body id="body">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-light bg-primary justify-content-between">
+        <a class="navbar-brand text-white">Cart System</a>
+        <form class="form-inline">
+            <a class="btn btn-primary my-2 my-sm-0 mx-3" href="index.html" role="button">
+                <i class="fas fa-list-ul"></i>
+            </a>
+            <a class="btn btn-primary my-2 my-sm-0 mx-3" href="cart.html" role="button">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cartCounter" class="badge badge-secondary"></span>
+            </a>
+        </form>
+    </nav>
+    <!-- /Navigation -->
+
+    <!-- items to add -->
+    <div class="container d-flex justify-content-center">
+        <div class="card mt-5" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Items</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Add to cart: </h6>
+                <ul class="list-group">
+
+                    <li class="list-group-item">Item 1
+                        <a id="item1" data-code="item1" data-name="item_name" data-price="10" type="submit" onclick="addToCart(this.id);" value="Add To Cart"
+                            class="btn btn-primary float-right" role="button">
+                            <i class="fas fa-cart-plus text-white"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-group-item">Item 2
+                        <a id="item2" data-code="item2" data-name="item_name" data-price="20" type="submit" onclick="addToCart(this.id);" value="Add To Cart"
+                            class="btn btn-primary float-right" role="button">
+                            <i class="fas fa-cart-plus text-white"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-group-item">Item 3
+                        <a id="item3" data-code="item3" data-name="item_name" data-price="30" type="submit" onclick="addToCart(this.id);" value="Add To Cart"
+                            class="btn btn-primary float-right" role="button">
+                            <i class="fas fa-cart-plus text-white"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-group-item">Item 4
+                        <a id="item4" data-code="item4" data-name="item_name" data-price="40" type="submit" onclick="addToCart(this.id);" value="Add To Cart"
+                            class="btn btn-primary float-right" role="button">
+                            <i class="fas fa-cart-plus text-white"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-group-item">Item 5
+                        <a id="item5" data-code="item5" data-name="item_name" data-price="50" type="submit" onclick="addToCart(this.id);" value="Add To Cart"
+                            class="btn btn-primary float-right" role="button">
+                            <i class="fas fa-cart-plus text-white"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /items to add -->
+
+    <!-- scripts -->
+    <script src="js/app.min.js"></script>
+    <script>checkLocalStorage();</script>
+
+
+</body>
+
+</html>
